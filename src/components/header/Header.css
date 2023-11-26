@@ -1,0 +1,148 @@
+.header{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: #cac6c5;
+
+
+}
+
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4.8rem;
+}
+
+.nav-menu-items {
+  margin: 1rem;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-menu-items:hover {
+  color: orangered;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid orangered;
+}
+
+.contact-button {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.contact-image {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+#mob-menu{
+  display: none;
+  object-fit: cover; 
+  height: 2rem;
+  font-size: 30px;
+  color: orangered;
+
+}
+
+.nav-menu-mob{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index:2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background-color: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.nav-menu-small{
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  
+}
+
+.nav-menu-small:hover{
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  transition: 0.1s ease;
+}
+
+
+
+
+@media (max-width: 768px)  {
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mob-menu {
+    display: flex;
+  }
+
+  .nav-menu-mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgb(40, 40, 40);
+    z-index: 2;
+    padding: 10rem;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .close-button span {
+    font-size: 2.5rem;
+  }
+
+}

@@ -1,0 +1,26 @@
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+  gap: 20px;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.icon {
+  text-decoration: "none";
+  padding: "10px";
+  transition: "0.2s ease-in";
+  color: black;
+}
+
+
+@media (0 <= width <= 768px)  {
+
+  .social-icons{
+    display: none;
+  }
+}
